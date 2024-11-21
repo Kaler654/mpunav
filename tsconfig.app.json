@@ -26,5 +26,5 @@
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src"]
+  "exclude": ["src"]
 }

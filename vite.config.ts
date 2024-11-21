@@ -24,5 +24,6 @@ export default defineConfig({
 		},
 		devSourcemap: true,
 	},
+	base: '/mpunav',
 
 });
