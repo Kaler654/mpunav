@@ -34,7 +34,7 @@ export const useDataStore = create<State & Action>()((set, get) => ({
 		// 	.catch(e => {
 		// 		console.error('Не удалось загрузить данные с сервера', e);
 
-				axios.get('/mpunav/dist/data/mainData.json').then(response => {
+				axios.get('/mpunav/data/mainData.json').then(response => {
 					const data: initialLocationData[] = response.data;
 					fillData(data, get);
 					console.log('Данные загружены из приложения');
