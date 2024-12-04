@@ -1,1 +1,1 @@
-{"root":["./src/main.tsx","./src/vite-env.d.ts","./src/associations/iconlinks.ts","./src/components/buttons/largebutton/largebutton.tsx","./src/components/buttons/searchbutton/searchbutton.tsx","./src/components/controls/floorscontrol/floorscontrol.tsx","./src/components/controls/scalecontrol/scalecontrol.tsx","./src/layouts/controlslayer/controlslayer.tsx","./src/pages/app/app.tsx"],"errors":true,"version":"5.6.2"}
+{"root":["./vite.config.ts"],"version":"5.6.2"}

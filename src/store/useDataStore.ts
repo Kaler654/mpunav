@@ -5,7 +5,7 @@ import {CorpusData, LocationData, PlanData, PlanEntrances} from '../associations
 import {appConfig} from '../appConfig.ts';
 
 // noinspection JSUnusedLocalSymbols
-const address = 'http://localhost:3005/ak';
+const address = 'https://mospolynavigation.github.io/polyna-preprocess/locations.json';
 
 type State = {
 	locations: LocationData[]
@@ -34,7 +34,7 @@ export const useDataStore = create<State & Action>()((set, get) => ({
 		// 	.catch(e => {
 		// 		console.error('Не удалось загрузить данные с сервера', e);
 
-				axios.get('/mpunav/data/mainData.json').then(response => {
+				axios.get('/mpunav/dist/data/mainData.json').then(response => {
 					const data: initialLocationData[] = response.data;
 					fillData(data, get);
 					console.log('Данные загружены из приложения');
